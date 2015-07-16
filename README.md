@@ -4,12 +4,6 @@ CSS utilities for mobile browsers.
 
 Stencil Utilities provide common CSS patterns that can be used in various one-off situations to affect appearance or spacing.
 
-## Warnings
-
-* Do **NOT** directly commit to the `master` branch!
-* Do **NOT** directly commit to the `gh-pages` branch! This will break our ability to use the git-subtree tool. Only apply changes to `gh-pages` using the subtree tool.
-* **Never** make a branch from any other branch but `master`. If you create `my-branch` and PR for it from `example` branch and then remove `example` branch, `my-branch` PR will be closed automatically
-
 
 ## Available Utilities
 
@@ -41,7 +35,7 @@ Once installed, the Stencil Utilities live in your project’s `app/bower_compon
 
 Utility classes are conceptually a bit like a Sass mixin; they allow you to add new style rules to an existing component, except that they are applied as classes in your markup. An example utility class is `.u-width-full`. It does exactly what it says: make an element expand to fill the full width of its container.
 
-Use these utilities in conjunction with other components for building layout (e.g. a Grid component and `.u-width-full`), or apply them to elements on your page in place of custom modifiers (e.g.: apply `.u-width-full` to make a button full-width without having to create a modifier).
+Use these utilities in conjunction with other components for building layout (e.g. a Grid component and `.u-width-full`), or apply them to elements on your page in place of custom modifiers (e.g.: `.c-button.u-width-full` to make a button full-width without having to create a modifier).
 
 Once your theming is in place, and you've built any custom components you need, you'll find you can build full pages simply by writing HTML, applying utility classes to apply one-off modifications to page elements.
 
@@ -75,30 +69,6 @@ To learn more about Utilities, Stencil, and Stencil Components, visit our dev ce
 [Use a Component](/)
 [Tips and Recommendations](/)
 [Uninstall a Component](/)
-
-
-## Updating `gh-pages` Online Docs
-
-We use the `gh-pages` branch to host Stencil's visual test and make them accessible via the interwebs. In order to maintain these docs, we use [git-subtree](https://github.com/git/git/tree/master/contrib/subtree) to keep the `gh-pages` tests in sync with `master`.
-
-Before you update the docs, make sure that `master` is fully up to date with all the latest tests and documentation.
-
-The process is as follows:
-
-1. Checkout the `master` branch
-2. Run `git subtree split --branch gh-pages --prefix tests/`
-3. Run `git push origin gh-pages`
-3. Done!
-
-What did that do? Well a subtree split effectively takes a sub-directory (in our case `tests/`) and creates a new branch (`gh-pages`) for just that directory. Of course, instead of creating a new branch, we simply pulled over only the commits from master that apply to that directory and added it to the sub-tree branch. That's why when you check out the `gh-pages` branch, the root directory consists of all the files found in the `tests/` directory of `master`.
-
-**WARNING** do NOT directly commit to the `gh-pages` branch! This will break our ability to use the git-subtree tool. Only apply changes to `gh-pages` using the subtree tool.
-
-In case if you committed directly to GH-Pages you will see errors running `git push origin gh-pages` command. To fix it repeat these steps:
-
-1. Revert your commit and push it (so you have 2 commits in total - one with changes and one that cancels these changes)
-2. Delete the `gh-pages` branch from the Github repo (remote origin)
-2. Run `git push origin gh-pages`
 
 
 ## License
