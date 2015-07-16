@@ -39,7 +39,6 @@ Use these utilities in conjunction with other components for building layout (e.
 
 Once your theming is in place, and you've built any custom components you need, you'll find you can build full pages simply by writing HTML, applying utility classes to apply one-off modifications to page elements.
 
-
 Some things to note about utility classes:
 
 1. Utility classes should apply a focused set of CSS properties that are applicable across a wide range of components;
