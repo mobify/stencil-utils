@@ -1,0 +1,45 @@
+
+@import 'bower_components/modularized-normalize-scss/normalize';
+@import 'bower_components/vellum/dist/vellum';
+
+@font-face {
+    font-family: 'Stencil';
+    src: url('fonts/stencil.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@import 'dist/test/test';
+
+.c-fixture-body {
+    max-width: 43rem;
+    margin: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.c-fixture-title {
+    margin: 1em 0;
+}
+
+.c-fixture-title__sub {
+    display: inline-block;
+
+    background: none;
+
+    font-family: Stencil, Georgia, serif;
+    text-decoration: none;
+
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+.c-fixture-box {
+    padding: 0.5rem;
+    border: 1px solid hsl(200, 20%, 70%);
+
+    background: hsl(200, 20%, 80%);
+
+    color: hsla(0, 0%, 0%, 0.65);
+    font-size: 0.8em;
+}

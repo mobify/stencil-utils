@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAUA,cACe;EACX,KAAK,EAAE,eAAe;;;AAG1B,YACa;EACT,KAAK,EAAE,gBAAgB;;;ACUvB,uCACS;EACL,OAAO,EAAE,GAAG;EACZ,OAAO,EAAE,KAAK;;AAGlB,kBAAS;EACL,KAAK,EAAE,IAAI;;;ADWnB,mBACoB;EAChB,QAAQ,EAAE,mBAAmB;;;AAgBjC,gBACiB;EACb,QAAQ,EAAE,iBAAiB",
+"sources": ["../../../dist/layout/_layout.scss","../../../bower_components/spline/dist/utilities/_clearfix.scss"],
+"names": [],
+"file": "layout.css"
+}
