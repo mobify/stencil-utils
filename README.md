@@ -65,9 +65,9 @@ Learn about setting up and running Stencil tests in our [dev centre documentatio
 
 To learn more about Utilities, Stencil, and Stencil Components, visit our dev centre documentation:
 
-[Use a Component](#)
-[Tips and Recommendations](#)
-[Uninstall a Component](#)
+- [Use a Component](#)
+- [Tips and Recommendations](#)
+- [Uninstall a Component](#)
 
 
 ## License
