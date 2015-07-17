@@ -28,7 +28,7 @@ Install with [Grunt](http://gruntjs.com/):
 grunt component:install:utils
 ```
 
-Once installed, the Stencil Utilities live in your project’s `app/bower_components` directory. Individual utilities will provide a stylesheet, including example markup and (optionally) JavaScript. To learn more, visit the [dev centre documentaton](/).
+Once installed, the Stencil Utilities live in your project’s `app/bower_components` directory. Individual utilities will provide a stylesheet, including example markup and (optionally) JavaScript. To learn more, visit the [dev centre documentaton](#).
 
 
 ## Using a Stencil Utility
@@ -54,20 +54,20 @@ Some things to note about utility classes:
 
 3. Run `grunt serve` to run testing environment locally. It will automatically recompile your stylesheets when you change them.
 
-4. Navigate to localhost:3000.
+4. Navigate to `localhost:3000`.
 
-5. Utilities are found in tests/visual/ directory.
+5. Utilities are found in `tests/visual/ directory`.
 
-Learn about setting up and running Stencil tests in our [dev centre documentation](/).
+Learn about setting up and running Stencil tests in our [dev centre documentation](#).
 
 
 ## Learn More
 
 To learn more about Utilities, Stencil, and Stencil Components, visit our dev centre documentation:
 
-[Use a Component](/)
-[Tips and Recommendations](/)
-[Uninstall a Component](/)
+[Use a Component](#)
+[Tips and Recommendations](#)
+[Uninstall a Component](#)
 
 
 ## License
