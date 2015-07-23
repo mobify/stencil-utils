@@ -1,7 +1,5 @@
 # Stencil Utilities
 
-CSS utilities for mobile browsers.
-
 Stencil Utilities provide common CSS patterns that can be used in various one-off situations to affect appearance or spacing.
 
 
@@ -16,9 +14,10 @@ Stencil Utilities provide common CSS patterns that can be used in various one-of
 
 ## Requirements
 
-- [Sass](http://sass-lang.com/) 3.4+
-- [Grunt](http://gruntjs.com/)
 - Adaptive.js 2.1 +
+- [Bower](http://bower.io/)
+- [Grunt](http://gruntjs.com/)
+- [Sass](http://sass-lang.com/) 3.4+ (update by running `gem update Sass` on the command line)
 
 ## Installation
 
@@ -42,21 +41,17 @@ Once your theming is in place, and you've built any custom components you need, 
 Some things to note about utility classes:
 
 1. Utility classes should apply a focused set of CSS properties that are applicable across a wide range of components;
-2. Utility classes use a `.u-` prefix instead of the `.c-` prefix used for a component’s class name;
+2. Utility classes use a `u-` prefix instead of the `c-` prefix used for a component’s class name;
 3. Utility classes almost always use `!important` in their styles. This is to ensure their styles always apply on top of other styles. Use utiliy classes surgically to adjust existing components, and use with care.
 
 
 ## Previewing Utilities
 
-1. If you have Sass < 3.4, run `gem update sass`. If you don't have Bower installed, run `npm install -g bower`.
+1. In your utilities directory, run `npm install && bower install`.
 
-2. In your utilities directory, run `npm install && bower install`.
+2. Run `grunt serve` to run testing environment locally. It will automatically recompile your stylesheets when you change them.
 
-3. Run `grunt serve` to run testing environment locally. It will automatically recompile your stylesheets when you change them.
-
-4. Navigate to `localhost:3000`.
-
-5. Utilities are found in `tests/visual/ directory`.
+3. Navigate to the `localhost:3000/tests/visual` directory.
 
 Learn about setting up and running Stencil tests in our [dev centre documentation](#).
 
